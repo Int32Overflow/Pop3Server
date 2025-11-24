@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
 	  <TargetFramework>netstandard2.0</TargetFramework>
@@ -34,6 +34,10 @@
 	<ItemGroup>
 		<PackageReference Include="System.IO.Pipelines" Version="10.0.0" />
 	</ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="Pop3Server.Test" />
+  </ItemGroup>
 
   <ItemGroup>
     <None Include="..\..\README.md" Pack="true" PackagePath="" />
